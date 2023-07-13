@@ -108,6 +108,7 @@ function showday(year, month){
             if (holidayDays.includes(NumberOfDays[i].getDate())){
 
                 showcakendar+="<td class='todayholiday'>"+NumberOfDays[i].getDate()+"<p class='small'>"+holidayNames[k]+"</p>"+"</td>";
+                k++;
 
             }else if(i%7===0){
 
