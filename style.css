@@ -1,0 +1,143 @@
+@charset "utf-8";
+.wrapper{
+    max-width: 2000px;
+    max-height: 2000px;
+    margin: 0 auto;
+    color: black;
+    
+}
+#manthyear{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+}
+#calendar{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+th {
+    color: #000;
+}
+th, td {
+    outline: 1px solid #ddd;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+}
+
+td:first-child {
+    color: red;
+}
+td:last-child {
+    color: blue;
+}
+th:first-child {
+    color: red;
+}
+th:last-child {
+    color: blue;
+}
+td.today {
+    background-color:  #c3b8ff;
+    color: #fff;
+}
+td.holidaycolor{
+    color: red;
+}
+td.todayholiday{
+    background-color: #c3b8ff;
+    color: red;
+}
+td.sat{
+    background-color: #c3b8ff;
+    color: blue;
+}
+td.sun{
+    background-color: #c3b8ff;
+    color: red;
+}
+td.notthemonth{
+    color: #ddd;
+}
+/*画面サイズにより、祝日の名前が出るか変わる*/
+@media screen and (max-width: 600px){
+    p{display:none}
+}
+.small{
+    font-size: 5px;
+}
+@media screen and (min-width: 1321px){
+    #prev {
+        float: left;
+        color: white;
+        background-color: black;
+        width: 110px;
+        height: 66px;
+    }
+    #next {
+        float: right;
+        color: white;
+        background-color: black;
+        width: 110px;
+        height: 66px;
+    }
+}
+@media screen and (max-width: 1320px){
+    #prev {
+        float: left;
+        color: white;
+        background-color: black;
+        width: 90px;
+        height: 54px;
+    }
+    #next {
+        float: right;
+        color: white;
+        background-color: black;
+        width: 90px;
+        height: 54px;
+    }
+}
+@media screen and (max-width: 960px){
+    #prev {
+        float: left;
+        color: white;
+        background-color: black;
+        width: 70px;
+        height: 42px;
+    }
+    #next {
+        float: right;
+        color: white;
+        background-color: black;
+        width: 70px;
+        height: 42px;
+    }
+}
+@media screen and (max-width: 600px){
+    #prev {
+        float: left;
+        color: white;
+        background-color: black;
+        width: 50px;
+        height: 30px;
+    }
+    #next {
+        float: right;
+        color: white;
+        background-color: black;
+        width: 50px;
+        height: 30px;
+    }
+}
+

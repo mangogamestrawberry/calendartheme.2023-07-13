@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カレンダー</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="syukujitsu.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <!--年月-->
+             <h1 id="manthyear"></h1>
+             <div>
+                <button id="prev" onclick="prev()" >‹</button>
+                <button id="next" onclick="next()" >›</button>
+            </div>
+        </div>
+        <div id="calendar"></div>
+    </div>
+</body>
+</html>
